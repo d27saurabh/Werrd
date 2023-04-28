@@ -10,12 +10,26 @@
 		6DEB366E29E781F900B12605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEB366D29E781F900B12605 /* AppDelegate.swift */; };
 		6DEB367029E781F900B12605 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEB366F29E781F900B12605 /* SceneDelegate.swift */; };
 		6DEB367229E781F900B12605 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEB367129E781F900B12605 /* ViewController.swift */; };
-		6DEB367529E781F900B12605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DEB367329E781F900B12605 /* Main.storyboard */; };
 		6DEB367729E781F900B12605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DEB367629E781F900B12605 /* Assets.xcassets */; };
 		6DEB367A29E781F900B12605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DEB367829E781F900B12605 /* LaunchScreen.storyboard */; };
 		6DEB368529E781F900B12605 /* WerrdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEB368429E781F900B12605 /* WerrdTests.swift */; };
 		6DEB368F29E781F900B12605 /* WerrdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEB368E29E781F900B12605 /* WerrdUITests.swift */; };
 		6DEB369129E781F900B12605 /* WerrdUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEB369029E781F900B12605 /* WerrdUITestsLaunchTests.swift */; };
+		E1188BBC29FB66C900E0FA8A /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BB729FB66C900E0FA8A /* Rubik-Italic.ttf */; };
+		E1188BBD29FB66C900E0FA8A /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BB729FB66C900E0FA8A /* Rubik-Italic.ttf */; };
+		E1188BBE29FB66C900E0FA8A /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BB729FB66C900E0FA8A /* Rubik-Italic.ttf */; };
+		E1188BBF29FB66C900E0FA8A /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BB829FB66C900E0FA8A /* Rubik-SemiBold.ttf */; };
+		E1188BC029FB66C900E0FA8A /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BB829FB66C900E0FA8A /* Rubik-SemiBold.ttf */; };
+		E1188BC129FB66C900E0FA8A /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BB829FB66C900E0FA8A /* Rubik-SemiBold.ttf */; };
+		E1188BC229FB66C900E0FA8A /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BB929FB66C900E0FA8A /* Rubik-Bold.ttf */; };
+		E1188BC329FB66C900E0FA8A /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BB929FB66C900E0FA8A /* Rubik-Bold.ttf */; };
+		E1188BC429FB66C900E0FA8A /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BB929FB66C900E0FA8A /* Rubik-Bold.ttf */; };
+		E1188BC529FB66C900E0FA8A /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BBA29FB66C900E0FA8A /* Rubik-Regular.ttf */; };
+		E1188BC629FB66C900E0FA8A /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BBA29FB66C900E0FA8A /* Rubik-Regular.ttf */; };
+		E1188BC729FB66C900E0FA8A /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BBA29FB66C900E0FA8A /* Rubik-Regular.ttf */; };
+		E1188BC829FB66C900E0FA8A /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BBB29FB66C900E0FA8A /* Rubik-Light.ttf */; };
+		E1188BC929FB66C900E0FA8A /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BBB29FB66C900E0FA8A /* Rubik-Light.ttf */; };
+		E1188BCA29FB66C900E0FA8A /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BBB29FB66C900E0FA8A /* Rubik-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +54,6 @@
 		6DEB366D29E781F900B12605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DEB366F29E781F900B12605 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6DEB367129E781F900B12605 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6DEB367429E781F900B12605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DEB367629E781F900B12605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DEB367929E781F900B12605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DEB367B29E781F900B12605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +62,11 @@
 		6DEB368A29E781F900B12605 /* WerrdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WerrdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEB368E29E781F900B12605 /* WerrdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WerrdUITests.swift; sourceTree = "<group>"; };
 		6DEB369029E781F900B12605 /* WerrdUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WerrdUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1188BB729FB66C900E0FA8A /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		E1188BB829FB66C900E0FA8A /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		E1188BB929FB66C900E0FA8A /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		E1188BBA29FB66C900E0FA8A /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		E1188BBB29FB66C900E0FA8A /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +117,10 @@
 		6DEB366C29E781F900B12605 /* Werrd */ = {
 			isa = PBXGroup;
 			children = (
+				E1188BB629FB662C00E0FA8A /* Rubik */,
 				6DEB366D29E781F900B12605 /* AppDelegate.swift */,
 				6DEB366F29E781F900B12605 /* SceneDelegate.swift */,
 				6DEB367129E781F900B12605 /* ViewController.swift */,
-				6DEB367329E781F900B12605 /* Main.storyboard */,
 				6DEB367629E781F900B12605 /* Assets.xcassets */,
 				6DEB367829E781F900B12605 /* LaunchScreen.storyboard */,
 				6DEB367B29E781F900B12605 /* Info.plist */,
@@ -125,6 +143,18 @@
 				6DEB369029E781F900B12605 /* WerrdUITestsLaunchTests.swift */,
 			);
 			path = WerrdUITests;
+			sourceTree = "<group>";
+		};
+		E1188BB629FB662C00E0FA8A /* Rubik */ = {
+			isa = PBXGroup;
+			children = (
+				E1188BB929FB66C900E0FA8A /* Rubik-Bold.ttf */,
+				E1188BB729FB66C900E0FA8A /* Rubik-Italic.ttf */,
+				E1188BBB29FB66C900E0FA8A /* Rubik-Light.ttf */,
+				E1188BBA29FB66C900E0FA8A /* Rubik-Regular.ttf */,
+				E1188BB829FB66C900E0FA8A /* Rubik-SemiBold.ttf */,
+			);
+			path = Rubik;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +262,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEB367A29E781F900B12605 /* LaunchScreen.storyboard in Resources */,
+				E1188BC529FB66C900E0FA8A /* Rubik-Regular.ttf in Resources */,
 				6DEB367729E781F900B12605 /* Assets.xcassets in Resources */,
-				6DEB367529E781F900B12605 /* Main.storyboard in Resources */,
+				E1188BBC29FB66C900E0FA8A /* Rubik-Italic.ttf in Resources */,
+				E1188BBF29FB66C900E0FA8A /* Rubik-SemiBold.ttf in Resources */,
+				E1188BC829FB66C900E0FA8A /* Rubik-Light.ttf in Resources */,
+				E1188BC229FB66C900E0FA8A /* Rubik-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +275,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1188BBD29FB66C900E0FA8A /* Rubik-Italic.ttf in Resources */,
+				E1188BC629FB66C900E0FA8A /* Rubik-Regular.ttf in Resources */,
+				E1188BC929FB66C900E0FA8A /* Rubik-Light.ttf in Resources */,
+				E1188BC329FB66C900E0FA8A /* Rubik-Bold.ttf in Resources */,
+				E1188BC029FB66C900E0FA8A /* Rubik-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +287,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1188BBE29FB66C900E0FA8A /* Rubik-Italic.ttf in Resources */,
+				E1188BC729FB66C900E0FA8A /* Rubik-Regular.ttf in Resources */,
+				E1188BCA29FB66C900E0FA8A /* Rubik-Light.ttf in Resources */,
+				E1188BC429FB66C900E0FA8A /* Rubik-Bold.ttf in Resources */,
+				E1188BC129FB66C900E0FA8A /* Rubik-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +341,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6DEB367329E781F900B12605 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6DEB367429E781F900B12605 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6DEB367829E781F900B12605 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +477,6 @@
 				INFOPLIST_FILE = Werrd/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +503,6 @@
 				INFOPLIST_FILE = Werrd/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
