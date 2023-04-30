@@ -30,6 +30,15 @@
 		E1188BC829FB66C900E0FA8A /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BBB29FB66C900E0FA8A /* Rubik-Light.ttf */; };
 		E1188BC929FB66C900E0FA8A /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BBB29FB66C900E0FA8A /* Rubik-Light.ttf */; };
 		E1188BCA29FB66C900E0FA8A /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1188BBB29FB66C900E0FA8A /* Rubik-Light.ttf */; };
+		E1188BCC29FD5D5300E0FA8A /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1188BCB29FD5D5300E0FA8A /* Word.swift */; };
+		E1188BCD29FD5D5300E0FA8A /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1188BCB29FD5D5300E0FA8A /* Word.swift */; };
+		E1188BCE29FD5D5300E0FA8A /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1188BCB29FD5D5300E0FA8A /* Word.swift */; };
+		E1188BD029FD646A00E0FA8A /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1188BCF29FD646A00E0FA8A /* RefreshButton.swift */; };
+		E1188BD129FD646A00E0FA8A /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1188BCF29FD646A00E0FA8A /* RefreshButton.swift */; };
+		E1188BD229FD646A00E0FA8A /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1188BCF29FD646A00E0FA8A /* RefreshButton.swift */; };
+		E1188BD429FD65EF00E0FA8A /* RoundedViewWithColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1188BD329FD65EF00E0FA8A /* RoundedViewWithColor.swift */; };
+		E1188BD529FD65EF00E0FA8A /* RoundedViewWithColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1188BD329FD65EF00E0FA8A /* RoundedViewWithColor.swift */; };
+		E1188BD629FD65EF00E0FA8A /* RoundedViewWithColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1188BD329FD65EF00E0FA8A /* RoundedViewWithColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +76,9 @@
 		E1188BB929FB66C900E0FA8A /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
 		E1188BBA29FB66C900E0FA8A /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		E1188BBB29FB66C900E0FA8A /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		E1188BCB29FD5D5300E0FA8A /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		E1188BCF29FD646A00E0FA8A /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
+		E1188BD329FD65EF00E0FA8A /* RoundedViewWithColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViewWithColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +136,9 @@
 				6DEB367629E781F900B12605 /* Assets.xcassets */,
 				6DEB367829E781F900B12605 /* LaunchScreen.storyboard */,
 				6DEB367B29E781F900B12605 /* Info.plist */,
+				E1188BCB29FD5D5300E0FA8A /* Word.swift */,
+				E1188BCF29FD646A00E0FA8A /* RefreshButton.swift */,
+				E1188BD329FD65EF00E0FA8A /* RoundedViewWithColor.swift */,
 			);
 			path = Werrd;
 			sourceTree = "<group>";
@@ -302,7 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1188BD429FD65EF00E0FA8A /* RoundedViewWithColor.swift in Sources */,
 				6DEB367229E781F900B12605 /* HomeViewController.swift in Sources */,
+				E1188BCC29FD5D5300E0FA8A /* Word.swift in Sources */,
+				E1188BD029FD646A00E0FA8A /* RefreshButton.swift in Sources */,
 				6DEB366E29E781F900B12605 /* AppDelegate.swift in Sources */,
 				6DEB367029E781F900B12605 /* SceneDelegate.swift in Sources */,
 			);
@@ -312,7 +330,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1188BD529FD65EF00E0FA8A /* RoundedViewWithColor.swift in Sources */,
 				6DEB368529E781F900B12605 /* WerrdTests.swift in Sources */,
+				E1188BD129FD646A00E0FA8A /* RefreshButton.swift in Sources */,
+				E1188BCD29FD5D5300E0FA8A /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +342,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEB368F29E781F900B12605 /* WerrdUITests.swift in Sources */,
+				E1188BD229FD646A00E0FA8A /* RefreshButton.swift in Sources */,
+				E1188BD629FD65EF00E0FA8A /* RoundedViewWithColor.swift in Sources */,
 				6DEB369129E781F900B12605 /* WerrdUITestsLaunchTests.swift in Sources */,
+				E1188BCE29FD5D5300E0FA8A /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
