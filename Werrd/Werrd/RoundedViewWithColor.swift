@@ -10,17 +10,9 @@ import UIKit
 
 class RoundedViewWithColor: UIView {
     
-    // MARK: - Initializers
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupUI()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     // MARK: - Properties
+    
+    var completion: (() -> Void)?
     
     let wordTitleLabel: UILabel = {
         let label = UILabel()
@@ -38,7 +30,7 @@ class RoundedViewWithColor: UIView {
         return label
     }()
     
-    let wordDefinationLabel: UILabel = {
+    let wordDefinitionLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "creating a sequence of instructions to enable the computer to do something"
@@ -48,11 +40,25 @@ class RoundedViewWithColor: UIView {
         return label
     }()
     
-    let refreshButton: RefreshButton = {
-        let button = RefreshButton(frame: .zero)
+    lazy var refreshButton: RefreshButton = {
+        let button = RefreshButton {
+            self.completion?()
+        }
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+    
+    // MARK: - Initializers
+    
+    init(completion: (() -> Void)?) {
+        self.completion = completion
+        super.init(frame: .zero)
+        setupUI()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - UI Setup Methods
     
@@ -85,11 +91,11 @@ class RoundedViewWithColor: UIView {
     }
     
     func setupWordDefinition() {
-        addSubview(wordDefinationLabel)
+        addSubview(wordDefinitionLabel)
         NSLayoutConstraint.activate([
-            wordDefinationLabel.topAnchor.constraint(equalTo: wordTitleLabel.bottomAnchor, constant: 10),
-            wordDefinationLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            wordDefinationLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)
+            wordDefinitionLabel.topAnchor.constraint(equalTo: wordTitleLabel.bottomAnchor, constant: 10),
+            wordDefinitionLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            wordDefinitionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)
         ])
     }
     

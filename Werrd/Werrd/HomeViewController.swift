@@ -19,11 +19,26 @@ class HomeViewController: UIViewController {
         return label
     }()
     
-    let roundedWordView: RoundedViewWithColor = {
-        let view = RoundedViewWithColor(frame: .zero)
+    lazy var roundedWordView: RoundedViewWithColor = {
+        let view = RoundedViewWithColor { [weak self] in
+            self?.refreshWithRandomWord()
+        }
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
+    let words = [
+            Word(name: "antelope chipmunk", definition: "small ground squirrel of western United States", partOfSpeech: "noun"),
+            Word(name: "auricular artery", definition: "artery that supplies blood to the ear", partOfSpeech: "noun"),
+            Word(name: "electric circuit", definition: "an electrical device that provides a path for electrical current to flow", partOfSpeech: "noun"),
+            Word(name: "punic", definition: "of or relating to or characteristic of ancient Carthage or its people or their language", partOfSpeech: "adjective"),
+            Word(name: "glib", definition: "artfully persuasive in speech", partOfSpeech: "adjective"),
+            Word(name: "appetite", definition: "a feeling of craving something", partOfSpeech: "noun"),
+            Word(name: "authoritatively", definition: "in an authoritative and magisterial manner", partOfSpeech: "adverb"),
+            Word(name: "golf links", definition: "a golf course that is built on sandy ground near a shore", partOfSpeech: "noun"),
+            Word(name: "unsay", definition: "take back what one has said", partOfSpeech: "verb"),
+            Word(name: "unbarreled", definition: "not in a barrel", partOfSpeech: "adjective")
+        ]
 
     // MARK: - Lifecycle
     
@@ -58,6 +73,21 @@ class HomeViewController: UIViewController {
             roundedWordView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             roundedWordView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.3)
         ])
+    }
+    
+    // MARK: - Action
+    
+    func refreshWithRandomWord() {
+        let randomWord = words.randomElement()
+        if let randomWord = randomWord {
+            if randomWord.name == roundedWordView.wordTitleLabel.text {
+                refreshWithRandomWord()
+            } else {
+                roundedWordView.wordTitleLabel.text = randomWord.name
+                roundedWordView.wordDefinitionLabel.text = randomWord.definition
+                roundedWordView.partsOfSpeechLabel.text = randomWord.partOfSpeech
+            }
+        }
     }
 }
 

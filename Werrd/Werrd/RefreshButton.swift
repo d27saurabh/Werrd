@@ -9,8 +9,11 @@ import UIKit
 
 class RefreshButton: UIButton {
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    var completion: (() -> Void)?
+    
+    init(completion: (() -> Void)?) {
+        super.init(frame: .zero)
+        self.completion = completion
         setupUI()
     }
     
@@ -23,6 +26,12 @@ class RefreshButton: UIButton {
         let symbolConfiguration = UIImage.SymbolConfiguration(pointSize: 40, weight: .medium, scale: .medium)
         let image = UIImage(systemName: "arrow.clockwise.circle", withConfiguration: symbolConfiguration)
         setImage(image, for: .normal)
+        
+        addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+    }
+    
+    @objc func buttonPressed() {
+        completion?()
     }
 
 }
