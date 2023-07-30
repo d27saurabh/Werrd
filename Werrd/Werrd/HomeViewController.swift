@@ -27,6 +27,13 @@ class HomeViewController: UIViewController {
         return view
     }()
     
+    let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.layer.cornerRadius = 20
+        return tableView
+    }()
+    
     let words = [
             Word(name: "antelope chipmunk", definition: "small ground squirrel of western United States", partOfSpeech: "noun"),
             Word(name: "auricular artery", definition: "artery that supplies blood to the ear", partOfSpeech: "noun"),
@@ -54,6 +61,7 @@ class HomeViewController: UIViewController {
     func setupUI() {
         setupAppTitle()
         setupRoundedWordView()
+        setupTableView()
     }
     
     func setupAppTitle() {
@@ -75,6 +83,18 @@ class HomeViewController: UIViewController {
         ])
     }
     
+    func setupTableView() {
+        view.addSubview(tableView)
+        tableView.dataSource = self
+        tableView.delegate = self
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: roundedWordView.bottomAnchor, constant: 30),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+        ])
+    }
+    
     // MARK: - Action
     
     func refreshWithRandomWord() {
@@ -89,5 +109,25 @@ class HomeViewController: UIViewController {
             }
         }
     }
+}
+
+extension HomeViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return words.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        var content = cell.defaultContentConfiguration()
+        content.text = words[indexPath.row].name
+        content.secondaryText = words[indexPath.row].definition
+        cell.contentConfiguration = content
+        return cell
+    }
+    
+}
+
+extension HomeViewController: UITableViewDelegate {
+    
 }
 
